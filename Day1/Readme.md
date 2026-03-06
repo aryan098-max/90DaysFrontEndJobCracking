@@ -109,7 +109,40 @@ client
 
 # Throttling
 
+It is programming technique which ensures that a function executes only once after a specific time interval. 
 
+The Comparison
+1. Debouncing: "Wait until I've stopped typing for 1 second, then run." [1]
+2. Throttling: "No matter how fast I type, only run once every 1 second." [2]
+
+# Flow 
+- The flow in which the code is execute is similar to debouncing. However, there is middleman
+  in our code, which prevents the user to send the message unless Enter is hit. 
+
+- This middleware kind of thing act as a gatekeeper and run after the event is fired each time.
+
+// getting input box
+const input = document.getElementById("chatInput");
+
+// Attach the event listener
+input.addEventListener("keydown", (event) => {
+    // Check if the key pressed is 'Enter'
+    if (event.key === "Enter") {
+        const message = event.target.value;
+        
+        if(message.trim() !== "") {
+            sendChatMessageWithSlowMode(message);
+            event.target.value = ""; // Clear input after sending
+        }
+    }
+});
+
+# console.log(`Slow mode active. Please wait ${((delay - (now - lastCall)) / 1000).toFixed(1)}s`);
+
+- This line of code is also confusing but here we are subtracting the delay from the now-lastCall
+  so that slow mode logic is kept
+
+- Divding the result by 1000 to get seconds and .toFixed(1) only gives first digit in seconds
 
 
 

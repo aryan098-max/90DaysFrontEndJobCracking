@@ -1,3 +1,4 @@
+// Helper throttle function
 function throttle(fn, delay){
 
     let lastCall = 0;
@@ -14,11 +15,13 @@ function throttle(fn, delay){
     }
 }
 
+// core function
 const sendChatMessage = (message)=>{
 
     console.log(message);
 }
 
+// sending message with slow mode
 const sendChatMessageWithSlowMode = throttle(sendChatMessage, 2 * 3000);
 
 // getting input box
@@ -30,7 +33,7 @@ input.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
         const message = event.target.value;
         
-        if (message.trim() !== "") {
+        if(message.trim() !== "") {
             sendChatMessageWithSlowMode(message);
             event.target.value = ""; // Clear input after sending
         }
