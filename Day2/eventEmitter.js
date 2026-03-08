@@ -1,0 +1,6 @@
+class MyEvenEmitter{
+
+    constructor(){
+
+    }
+}
