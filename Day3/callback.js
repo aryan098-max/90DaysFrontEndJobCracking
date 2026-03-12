@@ -9,6 +9,8 @@
     - Because JS is a single threaded language only one task executes inside the callstack at a time. 
       If we pass the callback function inside the async function. It will be executed later.
 
+      Callback functions are very important in performing asycn operations.
+
     Q. Why callbacks are important? 
     1. One of the most important feature of callback function is Non-blokcking execution
 
