@@ -55,3 +55,4 @@
 
     - Closures consumes memory; therefore, a good practise is to remove the event listener, and after removing
       the event listener the closure is garbage collected
+
