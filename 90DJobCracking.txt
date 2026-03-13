@@ -5,3 +5,5 @@
 5. async & await
 6. Closures
 7. Event Loop
+8. Scope Chaining
+9. Hoisting
