@@ -7,3 +7,4 @@
 7. Event Loop
 8. Scope Chaining
 9. Hoisting
+10. call, apply & bind, polyfill for bind
