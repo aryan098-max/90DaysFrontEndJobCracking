@@ -1,12 +1,16 @@
-/**
-    
-    - Promise.all([p1,p2,p3]) - only returns a single promise at the last with results
-      of all three promises inside an array. 
+/* 
+   1. Promise.allSettled() - It will wait for all the promises to be settled no matter they fail or succeed.
 
-    - To make it look like an error we are going to use - console.error(err)
-    - Even if one of the promise is rejected, it will return an error
+   - It returns an array of objects: 
+   1. { status: 'fulfilled', value: 1 } 
+   2. { status: 'rejected', reason: 'cart not received' } 
+   3. { status: 'fulfilled', value: 'Payment has been done' }
 
- */
+   - Each object has a status and value - 'status', 'value', 'reason'
+
+*/
+
+
 
 function userInfo(userId){
 
@@ -43,7 +47,7 @@ const p1 = userInfo(userId);
 const p2 = processCart(cart);
 const p3 = proceedToPayment("Payment has been done");
 
-const result = Promise.all([p1, p2, p3]);
+const result = Promise.allSettled([p1, p2, p3]);
 result
 .then((res)=>{
     const [userId, cart, message] = res;

@@ -1,12 +1,11 @@
-/**
+/*
     
-    - Promise.all([p1,p2,p3]) - only returns a single promise at the last with results
-      of all three promises inside an array. 
+    - Promise.race([]) - It returns the value of the first promise that is resolve or rejected
+    
+    - It only returns the value of the first promise which is either resolved or rejected.
+*/
 
-    - To make it look like an error we are going to use - console.error(err)
-    - Even if one of the promise is rejected, it will return an error
 
- */
 
 function userInfo(userId){
 
@@ -43,11 +42,10 @@ const p1 = userInfo(userId);
 const p2 = processCart(cart);
 const p3 = proceedToPayment("Payment has been done");
 
-const result = Promise.all([p1, p2, p3]);
+const result = Promise.race([p1, p2, p3]);
 result
 .then((res)=>{
-    const [userId, cart, message] = res;
-    console.log(userId, cart, message);
+    console.log(res);
 })
 .catch((err)=>{
     console.error(err);
