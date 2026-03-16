@@ -2,8 +2,10 @@ function userInfo(userId){
     
     // promise obj
     return new Promise((resolve, reject)=>{
-        // resolving the promise
-        resolve(userId);
+        setTimeout(()=>{
+            resolve(userId);
+
+        }, 1000)
     })
 }
 
