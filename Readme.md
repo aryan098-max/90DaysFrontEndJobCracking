@@ -13,3 +13,5 @@
 13. this (keyword)
 14. let & const
 15. block scope & shadowing
+16. map, filter & reduce
+
