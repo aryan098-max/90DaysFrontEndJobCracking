@@ -8,3 +8,4 @@
 8. Scope Chaining
 9. Hoisting
 10. call, apply & bind, polyfill for bind
+11. Prototypal Inheritance & Prototype
