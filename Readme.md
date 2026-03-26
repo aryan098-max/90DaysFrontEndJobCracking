@@ -9,3 +9,6 @@
 9. Hoisting
 10. call, apply & bind, polyfill for bind
 11. Prototypal Inheritance & Prototype
+12. Local Storage
+13. this (keyword)
+14. 
