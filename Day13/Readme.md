@@ -5,7 +5,8 @@ Inside global space the value of this is global object, which is window object i
 
 2. This Inside a function (aka local scope)
 The value of this inside a function depends how the function is invoked (run time binding). If a function is invoked inside the global scope this inside that function definition points to window object.
-However, if we use call, apply, and bind to bind the function to an obj, this inside that function will point to that obj
+However, if we use call, apply, and bind to bind the function to an obj, this inside that function will point to that obj.
+
 # Note: It doesn’t depend where the function was invoked, it rather depends on how the function was invoked.
 If a function is called using call, apply, & bind - binding it to an obj the this points to that obj
 

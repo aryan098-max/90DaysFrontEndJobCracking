@@ -11,4 +11,5 @@
 11. Prototypal Inheritance & Prototype
 12. Local Storage
 13. this (keyword)
-14. 
+14. let & const
+15. block scope & shadowing

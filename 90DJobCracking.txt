@@ -8,3 +8,7 @@
 8. Scope Chaining
 9. Hoisting
 10. call, apply & bind, polyfill for bind
+12. Local Storage
+13. this (keyword)
+14. let & const
+15. block scope & shadowing
