@@ -14,4 +14,6 @@
 14. let & const
 15. block scope & shadowing
 16. map, filter & reduce
-
+17. Objects, methods, singleton object
+18. Object destructuring, array destrucuturing
+19. Currying

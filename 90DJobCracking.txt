@@ -15,3 +15,4 @@
 16. map, filter & reduce
 17. Objects, method, bracket Notation
 18. Object destructuring
+19. Currying
