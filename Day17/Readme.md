@@ -8,3 +8,5 @@
     2. Object.create(): Object is a contructor function with .create() method also helps us to create a
         singleton obj, but should be only executed once. It is more prefered way of creating a singleton
         obj,because we can set obj1.__proto__ using this constructor function
+
+3. Object methods: object.keys(user), object.keys(values)
