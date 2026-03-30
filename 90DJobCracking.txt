@@ -13,3 +13,5 @@
 14. let & const
 15. block scope & shadowing
 16. map, filter & reduce
+17. Objects, method, bracket Notation
+18. Object destructuring
