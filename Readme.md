@@ -16,4 +16,5 @@
 16. map, filter & reduce
 17. Objects, methods, singleton object
 18. Object destructuring, array destrucuturing
-19. Currying
+19. Currying, bind, closures
+20. Event Bubbling, Capturing (trickling)
