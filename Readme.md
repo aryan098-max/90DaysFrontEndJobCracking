@@ -19,3 +19,8 @@
 19. Currying, bind, closures
 20. Event Bubbling, Capturing (trickling)
 21. Event Delegation
+22. CORS - Cross Origin Resource Sharing
+23. async vs defer
+24. Equality and Type Corecion
+25. Shallow Copy vs Deep Copy
+26. Pass by reference vs Pass by Value
