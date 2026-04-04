@@ -18,3 +18,4 @@
 18. Object destructuring, array destrucuturing
 19. Currying, bind, closures
 20. Event Bubbling, Capturing (trickling)
+21. Event Delegation

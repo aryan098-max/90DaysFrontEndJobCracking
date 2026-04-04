@@ -5,24 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<style>
-    div{
-        min-width: 100px;
-        min-height: 100px;
-        padding:30px;
-        border: 1px solid black;
-    }
-</style>
 <body>
 
-    <div id="grandparent">
-        <div id="parent">
-            <div id="child">
-
-            </div>
-        </div>
+    <!-- Instead of attaching event listener to each and every child element we will attach an event to parent -->
+    <div id="categories">
+        <ul>
+            <li id="laptops">Laptops</li>
+            <li id="cameras">Cameras</li>
+            <li id="shoes">Shoes</li>
+        </ul>
     </div>
-    
+
+    <!-- data-uppercase is our own attribute that we added -->
+    <di id="form">
+        <input type="text" id="name" data-uppercase>
+        <input type="text" id="pan">
+        <input type="text" id="mobile">
+    </div>
+
 </body>
-    <script src="./Day20/stopPropagation2.js"></script>
+
+<script src="./day21/eventDelegation2.js"></script>
 </html>

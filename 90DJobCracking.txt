@@ -17,3 +17,4 @@
 18. Object destructuring
 19. Currying
 20. Event Bubbling, Capturing (trickling)
+21. Event Delegation 
