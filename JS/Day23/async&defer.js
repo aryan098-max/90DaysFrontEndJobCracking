@@ -46,6 +46,8 @@
     - Execution happens only after the HTML document is fully parsed and DOM is fully built
     - Scripts execute in order if multiple defer scripts are used.
 
+    - It maintains the order of execution of the script unlike async
+
 
 3. The Async mode: 
 
@@ -64,6 +66,7 @@
     2. Script starts downloading in parallel.
     3. When the script finishes downloading, it **immediately executes**, pausing HTML parsing.
 
+    - It doesn't maintain the order of execution of the script but defer does that.
 
     # Note: It is recommended to use defer mode as we need to manipulate the DOM as a web developer
 
