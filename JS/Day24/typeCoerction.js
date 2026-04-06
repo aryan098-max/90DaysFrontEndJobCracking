@@ -14,3 +14,26 @@ console.log(add);
 // f you had 1 + 2 + "3", the result would be "33". Why? Because JS evaluates from left to right:
 // 1 + 2 = 3 (Math)
 let c = 2 + 3 + "3" // c = 53, because the expression is evaluated from left to right
+
+// If we try to convert a string into a number, it will return number but it gives Nan
+let x = "string"
+console.log(Number(x), typeof(x));
+
+// However, if try to convert a string into a boolean, it will convert the string into: boolean: true
+// Returned data type is 'boolean'
+let y = "hello"
+y = Boolean(y);
+console.log(y, typeof(y));
+
+// An empty string when converted into boolean - returns false, which used to check whether input is 
+// empty or not
+
+// Trying to convert undefined into a number, string, and boolean
+// f,g,h are undefined
+let f;
+let g;
+let h;
+
+f = Number(f) // Nan, typeof - number
+g = String(g) // undefined, typeof - string
+h = Boolean(h) // false, typeof - boolean
