@@ -1,9 +1,9 @@
 # Debouncing - Performance Optimization Technique
 
-- It is a programming technique which ensures that a function executes after a specific
-  period of delay. This technqiue helps to prevent unncessary api calls, improving data 
-  fetching from the api. It is a performance optimization Technique
-
+- It is a performance optimization technique which ensures that a function executes after 
+  a specific period of delay once the event has stopped triggering. This technqiue helps 
+  to prevent unncessary api calls, improving data fetching from the api. 
+  
 # 1st Approach of attaching the event listener is written on app.html 
 # Using the Modern JavaScript way
 - In this appraoch, we defined everything inside the script file, making our html file clean
