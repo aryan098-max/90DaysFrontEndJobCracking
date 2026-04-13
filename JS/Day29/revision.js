@@ -5,7 +5,7 @@
 
     3. Promises also help us to resolve callback hell by creating a chain of promise known as promise 
     chaining. In promises, we don't pass a callback function during function call, instead we chain
-    on the promise obj returned by the function
+    on the promise obj returned by the function invokation.
 
     4. It also resolved inversion of control because we don't pass a function during function invokation.
     In promises, we just chain on the promise obj returned by the function using then(), catch() and

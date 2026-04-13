@@ -24,3 +24,7 @@
 24. Equality and Type Corecion
 25. Shallow Copy vs Deep Copy
 26. Pass by reference vs Pass by Value
+27. Revision: Event Loop
+28. Revision: Closures, event handler, encapsulation
+29. Revision: Promises, Promise Chaining, Promise Falttening, Promise methods, all, race, any, allSettled
+30. Garbage Collection
