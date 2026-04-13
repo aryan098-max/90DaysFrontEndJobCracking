@@ -12,7 +12,7 @@
 
     It is situation where we let another function handle our function (like in callback). 
     
-    However, in promiseswe attach a handler, which will execute hundred percent once a promise is 
+    However, in promises attach a handler, which will execute hundred percent once a promise is 
     resolved. Promises allow us to avoid callback hell with the help of promise chaining. 
 
     In promises, we don't pass a callbck function, instead we attach a handler which executes after 

@@ -28,3 +28,4 @@
 28. Revision: Closures, event handler, encapsulation
 29. Revision: Promises, Promise Chaining, Promise Falttening, Promise methods, all, race, any, allSettled
 30. Garbage Collection
+31. Revision: Callback, Callback Hell

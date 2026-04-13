@@ -1,7 +1,7 @@
 /*
     1. async is a keyword in js which is used to create an asynchronus function which always returns a promise.
        
-    2. await is a keyword we used inside the async function, we cna't use await outside an async function. 
+    2. await is a keyword we used inside the async function, we can't use await outside an async function. 
        await pauses the code within the async function until the promise is resolved. 
 
     Q. Why do we need an async function? 
