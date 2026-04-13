@@ -32,3 +32,7 @@
 32. Revision: async & await
 33. Revision: Prototypal Inheritance
 34. Revision: Debouncing & Throttling
+35. Revision: this keyword in JS
+36. try, catch, & finally 
+37. Type Coercion
+
