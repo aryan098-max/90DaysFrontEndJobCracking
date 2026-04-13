@@ -17,12 +17,19 @@
 
 function debounce(fn, delay){
 
+   // timerId is an ID created by the setTimeout for the scheduled timer
     let timerId;   
 
     // args now contains [event] because you passed it in HTML
     return function (...args){ // all the args are inside an array
 
+      // checking the value of timerId
+      // console.log(timerId);
+
+      // previous timers are cleared, each time a key is pressed before a dealy of 1s
        clearTimeout(timerId);
+
+       // create a new timer of 1s and clearTimeout clears the previous timerId
        timerId = setTimeout(()=>{
 
             fn(...args); // Spreading the array back into the event object argument
@@ -36,15 +43,15 @@ async function search(e){
     // e is the event object. e.target is the <input> element.
     const query = e.target.value;
 
-    // Making an api call
-    const response = await fetch(`https://api.github.com/users/${query}`);
-    const data = await response.json();
-    console.log(data);
-
     // Making an api 
     if(query.trim() !== ""){
         console.log(`Fetching Data... for ${query}`)
     }
+
+    // Making an api call
+    const response = await fetch(`https://api.github.com/users/${query}`);
+    const data = await response.json();
+    console.log(data);
 }
 
 // searchWithDebounce is assigned once when the script loads

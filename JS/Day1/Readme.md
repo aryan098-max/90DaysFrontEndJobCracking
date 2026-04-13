@@ -38,11 +38,11 @@ Q. How the entire flow of debouncing works?
 
     function debounce (fn, delay) {
 
-        // introduce a timer varibale to make sure that the function executes after a delay as we ewant
+        // introduce a timer varibale to make sure that the function executes after a delay as we want
 
         let timerId;
 
-        // event obj is automatically passed to ...args, it taks all the rest args and wrap it in
+        // event obj is automatically passed to ...args, it takes all the rest args and wrap it in
         // insde the array. It is known as rest operator
         return function(...args){
 
@@ -109,7 +109,8 @@ client
 
 # Throttling
 
-It is programming technique which ensures that a function executes only once after a specific time interval. 
+It is performance optimization technique which ensures that a function executes only once after a 
+specific time interval. 
 
 The Comparison
 1. Debouncing: "Wait until I've stopped typing for 1 second, then run." [1]
@@ -138,6 +139,9 @@ input.addEventListener("keydown", (event) => {
 });
 
 # console.log(`Slow mode active. Please wait ${((delay - (now - lastCall)) / 1000).toFixed(1)}s`);
+
+- What does .toFixed(1) does?
+= It rounds the value, to 1 and its return type is string
 
 - This line of code is also confusing but here we are subtracting the delay from the now-lastCall
   so that slow mode logic is kept
