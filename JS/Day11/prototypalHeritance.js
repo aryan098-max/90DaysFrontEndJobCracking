@@ -2,7 +2,7 @@
     1. Prototype Based Inheritance Model
     - Unlike other programming languages such as C++, java which employs class based inhertiance
       model JS uses prorotype based inheritance model. It means that an obj can access the properties
-      and methods of other objects.
+      and methods of other objects through a chain like structure known as prototype chaining.
 
     - Every obj in JS has a hidden property called [[Prototype]] which points to the prototype of another
       obj
@@ -12,7 +12,7 @@
             - Now, this arr - hidden property is set to an object called Array.prototype, from here it can
               access the methods and properties of another obj
     
-    - Prorotype chaining: It is a mechanism of searching for methods and properties through chain like strucutre
+    - Prorotype chaining: It is a mechanism of searching properties and methods through chain like strucutre
       which is known as protoype chaining. 
 
     -  So, whenever an obj is created and it is trying to access some properties it first looks whether it has
