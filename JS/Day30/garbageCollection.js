@@ -46,6 +46,14 @@
         2. After, that it marks all the references from the roots
         3. However, if a reference is no longer reachable, it is not marked and the memory occupied 
            by this reference is freed (swept)
+
+
+   Examples of Memory Leark
+
+   1. Event handler, suppose that an event handler is attached to an event and that element is deleted, 
+      now, this event handler will sit on the memory of the browser.
+
+   2. Creating global variables unexpectdly, as they persits through the whole code.
   
   */
 

@@ -22,4 +22,9 @@ queue or micro task queue and pushes it inside the callstack.
       The callback function is passed to the callback queue and pushed inside
       the callstack and executed
 
+
+ 3. The main thread can still be blocked even with feature of event loop which
+    can be resolved using web worker, which uses another callstack and callback
+    queue to handle the heavy computation
+
 */

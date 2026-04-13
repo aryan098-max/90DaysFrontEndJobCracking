@@ -10,5 +10,4 @@
 
        Furthermore, await returns a resolved or rejected value, it doesn't returns a promise object
 
-
 */

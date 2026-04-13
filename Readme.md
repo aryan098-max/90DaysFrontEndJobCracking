@@ -29,3 +29,6 @@
 29. Revision: Promises, Promise Chaining, Promise Falttening, Promise methods, all, race, any, allSettled
 30. Garbage Collection
 31. Revision: Callback, Callback Hell
+32. Revision: async & await
+33. Revision: Prototypal Inheritance
+34. Revision: Debouncing & Throttling
