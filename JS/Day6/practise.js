@@ -1,19 +1,13 @@
-function x(){
+// closures with event handler
+const myBtn = document.getElementById('mybtn');
 
-    for(var i=1; i<=5; i++){
-        
-        // function definition
-        // It will not execute it will only create closure with each value of i
-        function close(x){
-            setTimeout(()=>{
-                console.log(x)
-            }, x*1000);
-        }
-        
-        // function call
-        // each i is a separate copy being passed down to close
-        close(i);
-    }
+function attachCouner(){
+    let count = 0;
+    myBtn.addEventListener('click', function increaseCount(){
+
+        count ++;
+        console.log(count);
+    })
 }
 
-x();
+attachCouner();

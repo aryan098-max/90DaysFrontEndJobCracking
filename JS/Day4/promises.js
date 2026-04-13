@@ -9,7 +9,7 @@
     Note: Once a state of a promise is changed it can't be changed into previous state. So, 
     promise is immutable. 
 
-    # Note: resolve(1) it is asynchronus, it executes immediately unlike then(calllback())
+    # Note: resolve(1) it is synchronus, it executes immediately unlike then(calllback())
  
  */
 

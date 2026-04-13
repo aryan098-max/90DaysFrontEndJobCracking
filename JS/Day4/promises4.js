@@ -31,8 +31,8 @@
     # Recover results from the successful promises even after one is rejected
     - Promise.allSettled([p1, p2, p3]) - all successful - returns [array of results]
     - If one of the promises is rejected - Promise.allSettled([p1, p2, p3]) - it will
-      still wait for other promises to settled and it will return: [result1, err, result2]
-    - 
+      still wait for other promises to settled and it will return: [result1, err, result2] 
+    -  It retuns [{},{},{}] array of objects
 
   3. Promise.race([p1, p2, p3]) - as the name suggests the promise which resolves first will be returned
      p2 will be returned because it resolves first. Value of the first resolved promise is returned.

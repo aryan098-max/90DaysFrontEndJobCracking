@@ -26,7 +26,7 @@ function userInfo(userId){
 function processCart(cart){
     return new Promise((resolve, reject)=>{
         setTimeout(()=>{
-           reject("cart not received");
+           resolve("cart received");
 
         }, 1000);
     })
@@ -51,7 +51,7 @@ const result = Promise.allSettled([p1, p2, p3]);
 result
 .then((res)=>{
     const [userId, cart, message] = res;
-    console.log(userId, cart, message);
+    console.log(userId.value, cart.value, message.value);
 })
 .catch((err)=>{
     console.error(err);

@@ -1,5 +1,8 @@
 /**
-    
+     Promise Flattening: then() handler creates a new promise every time and if a promise is being returned
+     from inside the then() handler, it adopts the state and result of that promise, which is known as promise
+     flattening. 
+
     1. A interesting thing we can observe about promises is that each .then() handler returns a promise 
     and if a promise is being returned from inisde the .then() handler. It will adopt the state of that 
     returned promise.
