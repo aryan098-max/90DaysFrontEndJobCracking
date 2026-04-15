@@ -40,3 +40,4 @@
 =============================== React =====================================
 
 38. React Intro
+39. Reconciliation Process, VDom, and Diffing Alogrithm
