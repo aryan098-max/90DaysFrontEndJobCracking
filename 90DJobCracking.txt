@@ -39,4 +39,6 @@
 
 38. React Intro
 39. Reconcilition Process
+40. Hooks
+41. Microservice vs Monolith
 
