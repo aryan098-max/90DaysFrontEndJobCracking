@@ -42,3 +42,9 @@
 38. React Intro
 39. Reconciliation Process, VDom, and Diffing Alogrithm
 40. Hooks, useState(), useEffect(), useCallBack(), useContext(), useRef(), useMemo/useCallabck()
+41. Monolith vs Microservice
+42.
+43. 
+44. 
+45. 
+
